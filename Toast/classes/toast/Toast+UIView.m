@@ -208,7 +208,7 @@ static NSString *kDurationKey = @"CSToastDurationKey";
         if( [point caseInsensitiveCompare:@"top"] == NSOrderedSame ) {
             return CGPointMake((int)(self.bounds.size.width/2), (int)(toast.frame.size.height / 2) + kVerticalPadding);
         } else if( [point caseInsensitiveCompare:@"bottom"] == NSOrderedSame ) {
-            return CGPointMake((int)(self.bounds.size.width/2), (self.bounds.size.height - (int)(toast.frame.size.height / 2)) - kVerticalPadding);
+            return CGPointMake((int)(self.bounds.size.width/2), (self.bounds.size.height - (int)(toast.frame.size.height / 2)) - kVerticalPadding- 30);
         } else if( [point caseInsensitiveCompare:@"center"] == NSOrderedSame ) {
             return CGPointMake((int)(self.bounds.size.width / 2), (int)(self.bounds.size.height / 2));
         }
